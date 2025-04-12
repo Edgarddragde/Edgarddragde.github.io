@@ -85,12 +85,20 @@ body {
 }
 
 #page-header {
+<<<<<<< HEAD
     padding-left: 10%;
+=======
+    padding-left:0 ;
+>>>>>>> 705e66a (New website incoming!)
     padding-top: 0;
     margin-top: 0;
     font-size: clamp(1.5rem, 3vw, 4rem);
     color: lightskyblue;
     text-shadow: 0 0 10px blue, 0 0 10px white;
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> 705e66a (New website incoming!)
 }
 
 .bio {

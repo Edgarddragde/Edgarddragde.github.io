@@ -2,12 +2,17 @@
 <html>
 <head>
     <title>Edgard Aviles</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="practice.css">
+=======
+    <link rel="stylesheet" href="home-page.css">
+>>>>>>> 705e66a (New website incoming!)
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <nav class="navbar">
+<<<<<<< HEAD
         <button class="navbar-item" onclick="document.location='index.html'"></button>
 	<button class="navbar-item" onclick="document.location='about-me.html'"></button>
         <button class="navbar-item" onclick="document.location='portfolio.html'"></button>
@@ -33,5 +38,75 @@
 	</div>
     </main>
     <footer class="footer">&#169 2023 Edgard's Everyday Blog | All Rights Reserved</footer>
+=======
+        <button class="navbar-item" onclick="scrollToHome()"></button>
+	<button class="navbar-item" onclick="scrollToAbout()"></button>
+        <button class="navbar-item" onclick="scrollToPortfolio()"></button>
+	<button class="navbar-item" onclick="scrollToResume()"></button>
+        <button class="navbar-item" onclick="scrollToContact()"></button>
+    </nav>
+    <section class="page" id="home">
+        <div class="type-writer">
+		    <h1>EDGARD'S PERSONAL WEBSITE</h1>
+        </div>
+        <div class="page-info">
+	        <h1 id="page-header">Computer Scientist | Cybersecurity Enthusiast | Algorithmic Trader</h1>
+	        <div class="bio">
+                <img class="bio-pic" src="Lkdinid.jpg">
+	            <div class=bio-text>
+                    I'm a sophomore at Cal Poly with a passion for software engineering, cybersecurity, and algorithmic trading. I have experience in Python, C++, C, and RISC-V assembly, and I enjoy building secure systems, optimizing trading strategies, and exploring cloud-based AI solutions. Currently, I'm honing my skills in algorithm development, cloud computing, and low-level programming while working on projects that push my technical abilities. Always eager to learn and take on new challenges, I document my journey through my blog and portfolio.
+	            </div>
+	        </div>
+        </div>
+        <div class="info">
+            <button class="contact" onclick="scrollToContact()'">Contact Me</button>
+	        <button class="learn-more" onclick="scrollToPortfolio()">Learn More </button>
+        </div>
+    </section>
+	<section class="page" id="about-me">
+        <div class="page-info">
+            <h1 id="page-header">About Me</h1>
+            <div class="bio">
+                <div class="bio-pic" id="rotate_change"></div>
+                <div class="bio-text">
+                    Hi! I'm Edgard Aviles, a passionate and driven sophomore in Computer Science at Cal Poly. Currently, I'm focused on exploring cybersecurity, algorithmic trading, and AI model deployment on cloud platforms like AWS and Azure. My academic journey is complemented by hands-on experience, from working with RISC-V assembly to developing real-time antivirus protection software. I'm always eager to take on new challenges, whether it's optimizing AI models, designing intuitive web interfaces, or building out sophisticated trading strategies using Python and pandas. My goal is to not only stand out as a software engineer but also to continuously learn and innovate in this ever-evolving field. In my spare time, I enjoy building and improving my personal website, where I share my projects, blog about the latest trends in tech, and keep my resume up-to-date. Feel free to browse around and check out what I'm working on!
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="page" id="portfolio">
+
+	</section>
+	<section class="page" id="resume">
+        hello
+	</section>
+    <section class="page" id="contact">
+
+    </section>
+    <footer class="footer">&#169 2023 Edgard's Everyday Blog | All Rights Reserved</footer>
+<script>
+
+    function scrollToHome() {
+        document.getElementById("home").scrollIntoView({ behavior: "smooth"})
+    }
+
+    function scrollToAbout() {
+        document.getElementById("about-me").scrollIntoView({ behavior: "smooth" })
+    }
+
+    function scrollToPortfolio() {
+        document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" })
+    }
+
+    function scrollToResume() {
+        document.getElementById("resume").scrollIntoView({ behavior: "smooth" })
+    }
+    
+    function scrollToContact() {
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+    }
+
+</script>
+>>>>>>> 705e66a (New website incoming!)
 </body>
 </html>

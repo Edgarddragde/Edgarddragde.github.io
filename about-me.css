@@ -22,7 +22,11 @@ body {
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
+<<<<<<< HEAD
     overflow: hidden; /* ensures the content is not revealed until the animation*/
+=======
+    overflow: hidden; :/* ensures the content is not revealed until the animation*/
+>>>>>>> 705e66a (New website incoming!)
     border-right: 2px solid lightskyblue; /* the typewrite cursor*/
     white-space: nowrap; /* keeps the content on a single line */
     letter-spacing: .15em; /* adjust as needed */
@@ -88,9 +92,14 @@ body {
     text-align: center;
     padding-top: 0;
     margin-top: 0;
+<<<<<<< HEAD
     font-size: clamp(1.5rem, 3vw, 4rem);
     /*text-shadow: 0 0 5px red, 0 0 5px purple;
     */
+=======
+    height: 158px;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+>>>>>>> 705e66a (New website incoming!)
 }
 
 .bio {
@@ -118,6 +127,7 @@ body {
     max-width: 200px;
     height: 288.75px;
     border-radius: 100%;
+<<<<<<< HEAD
     box-shadow: 0px 0px 30px blue inset;
 }
 
@@ -166,4 +176,38 @@ body {
 
 .learn-more:hover {
     box-shadow: 8px 1px 20px 5px steelblue;
+=======
+    box-shadow: 0px 0px 50px blue;
+    animation: colorChange 5s infinite alternate, rotatePic 10s linear infinite;
+}
+
+/* Define the animation */
+@keyframes colorChange {
+  0% {
+    box-shadow: 0px 0px 50px lightblue inset;
+  }
+  25% {
+    box-shadow: 0px 0px 50px black;
+  }
+  50% {
+    box-shadow: 0px 0px 50px lightblue inset;
+  }
+  75% {
+    box-shadow: 0px 0px 50px black;
+  }
+  100% {
+    box-shadow: 0px 0px 50px lightblue inset;
+  }
+}
+
+
+/* Rotation animation */
+@keyframes rotatePic {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+>>>>>>> 705e66a (New website incoming!)
 }
