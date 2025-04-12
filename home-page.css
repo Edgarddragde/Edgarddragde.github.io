@@ -148,7 +148,7 @@ main {
 /* Rotating pic with changing colors*/
 #rotate_change {
     height: 288.75px;
-    animation: colorChange 5s infinite alternate, rotatePic 10s linear infinite;
+    animation: colorChange 11s infinite alternate, rotatePic 10s linear infinite;
 }
 
 /* Define the animation */
@@ -156,17 +156,35 @@ main {
     0% {
         box-shadow: 0px 0px 50px lightblue inset;
     }
-    25% {
-        box-shadow: 0px 0px 50px black;
+    10% {
+        box-shadow: 0px 0px 40px lightblue inset;
+    }
+    20% {
+        box-shadow: 0px 0px 30px lightblue inset;
+    }
+    30% {
+        box-shadow: 0px 0px 20px lightblue inset;
+    }
+    40% {
+        box-shadow: 0px 0px 10px lightblue inset;
     }
     50% {
-        box-shadow: 0px 0px 50px lightblue inset;
+        box-shadow: 0px 0px 0px lightblue inset;
     }
-    75% {
-        box-shadow: 0px 0px 50px black;
+    60% {
+        box-shadow: 0px 0px 10px lightblue;
+    }
+    70% {
+        box-shadow: 0px 0px 20px lightblue;
+    }
+    80% {
+        box-shadow: 0px 0px 30px lightblue;
+    }
+    90% {
+        box-shadow: 0px 0px 40px lightblue;
     }
     100% {
-        box-shadow: 0px 0px 50px lightblue inset;
+        box-shadow: 0px 0px 50px lightblue;
     }
 }
 
