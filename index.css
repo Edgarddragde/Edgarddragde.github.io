@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.type-writer {
+    font-weight: bolder;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.type-writer h1 {
+    color: white;
+    text-shadow: 0 0 20px lightblue;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    overflow: hidden; /* ensures the content is not revealed until the animation*/
+    border-right: 2px solid lightskyblue; /* the typewrite cursor*/
+    white-space: nowrap; /* keeps the content on a single line */
+    letter-spacing: .15em; /* adjust as needed */
+    animation: typing 4s steps(30, end), blinkTextCursor .5s step-end infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinkTextCursor {
+    from, to { border-color: transparent }
+    50% { border-color: lightskyblue }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 5%;
+    z-index: 1000;
+    gap: 20%;
+    position: fixed;
+    width: 2rem;
+    transform: translateY(-50%);
+    height: fit-content;
+    align-items: center;
+}
+
+.navbar-item {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(200, 150, 200, 0.7);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    height: 2rem;
+    width: 2rem;
+    background-color: #fffdd0;
+}
+
+
+.page {
+    height: 100vh;
+    background-color: #092429;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#page-header {
+    padding-left: 10%;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    color: lightskyblue;
+    text-shadow: 0 0 10px blue, 0 0 10px white;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows items to stack on smaller screens */
+    align-items: center;
+    gap: 10rem;
+    padding-left: 10%;
+    margin-top: 3%;
+}
+
+.bio-text {
+    margin-top: 1%;
+    flex: 1;
+    flex-grow: 30%;
+    text-shadow: 0 0 1px #03e8fc; /*We are going to try to make this into a transition*/
+    color: #357063;
+    font-size: 1.2rem;
+    max-width: 50%;
+}
+
+.bio-pic {
+    width: clamp(100px, 25%, 200px);
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.info {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 10%;
+    height: fit-content;
+    gap: 5%;
+    width: fit-content;
+}
+
+.contact {
+    padding: 0.5%;
+    height: 4rem;
+    width: 13rem;
+    font-size: 1.7rem;
+    background-color: #0d0108;
+    text-shadow: 0 0 6px white;
+    color: lightblue;
+    border-color: lightblue;
+    border-radius: 10px;
+    align-content: space-evenly;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.contact:hover {
+    box-shadow: 8px 1px 20px 5px steelblue;
+}
+
+.learn-more {
+    padding: 0.5%;
+    height: 4rem;
+    width: 13rem;
+    font-size: 1.7rem;
+    background-color: lightblue;
+    text-shadow: 0 0 6px white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    align-content: space-evenly;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    box-shadow: 8px 1px 20px 5px steelblue;
+}
