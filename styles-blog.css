@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(36, 80, 148);
+}
+
+.header {
+    background-color: black;
+    height: 50px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-gap: 15px;
+}
+
+.navbar-item {
+    color: white;
+    padding: 8px;
+    background-color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    display: inline-block;
+    border: none;
+    height: 50px;
+}
+
+.navbar-item:hover {
+    color: black;
+    background-color: #fffdd0;
+    border-radius: 10px;
+
+    
+}
+
+.blog-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    grid-gap: 10px
+}
+
+.blog-post {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10pt;
+}
+
+.post-title {
+    margin: 5px 5px 25px 5px;
+}
+
+.post-text {
+    margin: 5px 5px 5px 5px;
+}
